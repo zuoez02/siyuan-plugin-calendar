@@ -1,0 +1,20 @@
+{
+  "name": "siyuan-plugin-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/vue": "^1.7.11",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vuepic/vue-datepicker": "^4.0.1",
+    "vite": "^4.1.4",
+    "vite-plugin-css-injected-by-js": "^3.0.1",
+    "vue": "^3.2.47"
+  }
+}
