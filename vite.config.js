@@ -7,6 +7,13 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
     plugins: [cssInjectedByJsPlugin(), vue()],
     build: {
+        lib: {
+            entry: resolve(__dirname, 'src', "index.ts"),
+            formats: ['cjs'],
+        },
+        commonjsOptions: {
+            defaultIsModuleExports: true,
+        },
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'src', "index.ts"),

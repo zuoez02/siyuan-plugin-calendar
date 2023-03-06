@@ -12,9 +12,10 @@ class CalendarPlugin extends Plugin {
     onload() {
         this.el = document.createElement('div');
         document.body.appendChild(this.el);
-        const ComponentApp = createApp(Button)
+        const ComponentApp = createApp(Button);
         ComponentApp.mount(this.el);
         clientApi.addToolbarRight(this.el);
+        console.log('load calendar plugin');
     }
 
     onunload() {
@@ -22,6 +23,4 @@ class CalendarPlugin extends Plugin {
     }
 }
 
-module.exports = {
-    default: CalendarPlugin,
-}
+export default CalendarPlugin;
